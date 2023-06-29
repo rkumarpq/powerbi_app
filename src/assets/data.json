@@ -1,0 +1,118 @@
+[
+    
+{
+    "name": "Deep Dive",
+    "type": "folder",
+    "children": [{
+            "name": "GPS",
+            "children": [{
+                "name": "Culture Grams",
+                "type": "file", 
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/GPSCultureGramsUsageDownload.pbix",
+                "headername": "Culture Grams"
+            }, {
+                "name": "Global Usage",
+                "type": "file",
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/GPSGlobalUsageDownload.pbix",
+                "headername": "Global Usage Report"
+            }, {
+                "name": "Retrievals",
+                "type": "file",
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/GPSGlobalUsageDownload.pbix",
+                "headername": "Retrievals"
+            }, {
+                "name": "Searches by Database",
+                "type": "file",
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/GPSGlobalUsageDownload.pbix",
+                "headername": "Searches by Database"
+            }
+            ]
+        },
+        {
+            "name": "PQIS & PQD",
+            "type": "folder",
+            "children": [{
+                "name": "Global Usage",
+                "type": "file", 
+                "urlp":"https://app.powerbi.com/reportEmbed?reportId=4f1c1751-7b7f-4bc7-9c72-1110822ab0d8&autoAuth=true&ctid=127fa96e-00b4-429e-95f9-72c2828437a4",
+                "headername": "Global Usage"
+            }, {
+                "name": "Retrievals",
+                "type": "file",
+                "urlp":"https://app.powerbi.com/reportEmbed?reportId=3bbb5916-832c-4970-819a-2835861e7c20&autoAuth=true&ctid=127fa96e-00b4-429e-95f9-72c2828437a4",
+                "headername": "Retrievals"
+            }, {
+                "name": "Searches by Database",
+                "type": "file",
+                "urlp":"https://app.powerbi.com/reportEmbed?reportId=7c6abb96-de7b-4dd1-940f-080dff86b6fc&autoAuth=true&ctid=127fa96e-00b4-429e-95f9-72c2828437a4",
+                "headername": "Searches by Database"
+            }, {
+                "name": "Session Usage",
+                "type": "file",
+                "urlp":"https://app.powerbi.com/reportEmbed?reportId=67311be8-4a6f-49bc-865a-737327aa16be&autoAuth=true&ctid=127fa96e-00b4-429e-95f9-72c2828437a4",
+                "headername": "Session Usage"
+            }, {
+                "name": "Unique Searches",
+                "type": "file",
+                "urlp":"https://app.powerbi.com/reportEmbed?reportId=6480b431-24cd-47c8-aff0-e567392558d0&autoAuth=true&ctid=127fa96e-00b4-429e-95f9-72c2828437a4",
+                "headername": "Unique Searches"
+            }]
+        },
+        {
+            "name": "WFS",
+            "type": "folder",
+            "children": [{
+                "name": "WFS Overview",
+                "type": "file", 
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/GPSCultureGramsUsageDownload.pbix",
+                "headername": "WFS Overview"
+            }, {
+                "name": "WFS Retrievals",
+                "type": "file",
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/GPSGlobalUsageDownload.pbix",
+                "headername": "WFS Retrievals"
+            }, {
+                "name": "WFS Searches",
+                "type": "file",
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/GPSGlobalUsageDownload.pbix",
+                "headername": "WFS Searches"
+            }]
+        }
+    ]
+    
+},
+{
+    "name": "PQD",
+    "type": "folder",
+    "children": [{
+        "name": "Global",
+        "type": "file", 
+        "urlp":"https://app.powerbi.com/asdgadfoisjdfg/PBMAccntMgrsUsageDownload.pbix",
+        "headername": "Global"
+       
+    }]}
+,
+        {
+            "name": "PQIS Business Metrics",
+            "type": "folder",
+            "children": [{
+                "name": "Account Managers Metrics",
+                "type": "file", 
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/PBMAccntMgrsUsageDownload.pbix",
+                "headername": "Account Managers Metrics"
+               
+            },{
+                "name": "GCA Metrics",
+                "type": "file", 
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/PBMAccntMgrsUsageDownload.pbix",
+                "headername": "GCA Metrics"
+               
+            },{
+                "name": "Product Management Metrics",
+                "type": "file", 
+                "urlp":"https://app.powerbi.com/asdgadfoisjdfg/PBMAccntMgrsUsageDownload.pbix",
+                "headername": "Product Management Metrics"
+               
+            }]
+        }
+]

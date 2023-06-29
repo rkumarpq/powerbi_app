@@ -1,0 +1,122 @@
+<!-- <mat-toolbar color="primary">
+    <mat-toolbar-row> 
+        <button mat-icon-button>
+<mat-icon (click) = "sidenav.toggle();">menu</mat-icon>
+
+        </button>
+        <h1> Embedded PowerBi </h1></mat-toolbar-row>
+</mat-toolbar> -->
+<mat-toolbar  style="min-height: 30px !important; height: 30px !important;">
+        <mat-toolbar-row>
+          <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+          </button>
+          <!-- <h1>{{ headername }}</h1> -->
+         
+        </mat-toolbar-row>
+      
+       
+      </mat-toolbar>
+<mat-drawer-container class="app-container" autosize>
+    
+<mat-drawer #sidenav mode="side" class="app-sidenav">
+
+  <mat-tree 
+  [treeControl]="treeControl"
+  [dataSource]="dataSource">
+      <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding (click)="logNode(node)">
+ 
+  <mat-icon class="type-icon" [attr.aria-label]="node.type + 'icon'">
+      {{ node.type ==='file' ? 'description' : 'folder' }}
+    </mat-icon>
+    <button mat-button >
+        {{node.name}}
+        </button>
+      </mat-tree-node>
+      <mat-tree-node *matTreeNodeDef="let node;when:hasChild" matTreeNodePadding>
+  <button mat-icon-button matTreeNodeToggle [attr.atria-label] = "'Toggle'+ node.name" matTreeNodeToggle >
+      <mat-icon class="mat-icon-rtl-mirror"> 
+          {{treeControl.isExpanded(node) ? 
+              'expand_more' : 'chevron_right'}} 
+      </mat-icon>
+
+  <!-- <mat-icon class="type-icon" [attr.aria-label]="node.type + 'icon'">
+      {{ node.type ==='file' ? 'description' : 'folder' }}
+    </mat-icon> -->
+    <mat-icon class="mat-icon-rtl-mirror">
+        {{ treeControl.isExpanded(node) ? "folder" : "folder_open" }}
+      </mat-icon>
+    </button>
+    <button mat-button >
+  {{node.name}}
+  </button>
+      </mat-tree-node>
+  </mat-tree>
+
+    
+</mat-drawer>
+<mat-drawer-content >
+              
+<div style="height: 100%" class="mat-sidenav-content">
+
+    <iframe [src]=safeUrl width="100%" height="99.4%" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</mat-drawer-content>
+
+</mat-drawer-container>
+<!-- <mat-drawer-container class="example-container">
+    <mat-drawer class="mat-sidenav" mode="side" opened>Drawer content <mat-slide-toggle>Toggle
+            me!</mat-slide-toggle>
+        
+        
+            <mat-tree 
+            [treeControl]="treeControl"
+            [dataSource]="dataSource">
+                <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+            <button mat-icon-button disabled></button>
+            {{node.name}}
+                </mat-tree-node>
+                <mat-tree-node *matTreeNodeDef="let node;when:hasChild" matTreeNodePadding>
+            <button mat-icon-button matTreeNodeToggle [attr.atria-label] = "'Toggle'+ node.name" matTreeNodeToggle>
+                <mat-icon class="mat-icon-rtl-mirror"> 
+                    {{treeControl.isExpanded(node) ? 
+                        'expand_more' : 'chevron_right'}} 
+                </mat-icon>
+            </button>
+            {{node.name}}
+                </mat-tree-node>
+            </mat-tree>
+        
+        </mat-drawer>
+
+
+
+
+
+
+
+    <mat-drawer-content>
+
+        <div class="header">
+            <div class="title">Power BI Embedded</div>
+        </div>
+
+
+       <ng-template #embedReportFlow>
+            <div class="display-message position" #status>
+                <label></label>
+            </div>
+            <div class="embed-report">
+                <button id="embed-action" #embedReportBtn>
+                    Embed Report
+                </button>
+            </div>
+            <div class="separator"></div>
+        </ng-template> 
+
+<iframe src="https://app.powerbi.com/reportEmbed?reportId=3bbb5916-832c-4970-819a-2835861e7c20&autoAuth=true&ctid=127fa96e-00b4-429e-95f9-72c2828437a4" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    </mat-drawer-content>
+</mat-drawer-container> -->
