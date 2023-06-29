@@ -26,12 +26,18 @@
   .mat-drawer-inner-container::-webkit-scrollbar {
     display: none;
 }
-
+.mat-tree {
+  font-family: wf_segoe-ui_light, helvetica, arial, sans-serif;
+}
 
 .mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
   font-family: wf_segoe-ui_light, helvetica, arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
+}
+
+.mat-tree-node {
+  min-height: 34px
 }
   
   /* Copyright (c) Microsoft Corporation.
