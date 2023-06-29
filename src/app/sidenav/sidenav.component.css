@@ -29,8 +29,8 @@
 
 
 .mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
-  font-family: "Helvetica";
-  font-size: 18px;
+  font-family: wf_segoe-ui_light, helvetica, arial, sans-serif;
+  font-size: 14px;
   font-weight: 500;
 }
   
